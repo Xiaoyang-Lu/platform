@@ -1,5 +1,8 @@
 # Platform
 
+I am luxiaoyang
+
+
 This is a prototype for a platform which can dynamically generate fig(chart) according to the database. The platform is designed under django framework 1.9 with python 2.7.
 
 # 1. Set Up
