@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+<style>
+{% block style %}
+{% endblock style%}
+</style>
+
+<!-- {% block title %}
+	{{ title }}
+{% endblock title %} -->
+
+<!-- {% block renderfig%}
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+	{% autoescape off%}
+		{{ fig }}
+	{% endautoescape %}
+  </div>
+</div>
+{% endblock renderfig %} -->
+
+{% block form %}
+<div class="row">
+  <div class="col-md-3">
+	<form method = 'GET' action = ''>
+		{{ matrixform | crispy}}
+		<input class="btn btn-sm btn-primary btn-block" type = 'submit' value = 'plot'/>
+	</form>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-8">
+  	{% autoescape off%}
+	{{ fig }}
+	{% endautoescape %}
+  </div>
+</div>
+{% endblock form %}
+
+
+

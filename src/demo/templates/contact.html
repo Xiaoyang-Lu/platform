@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+<style>
+{% block style %}
+{% endblock style%}
+</style>
+
+
+
+<!-- {% block renderfig%}
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+	{% autoescape off%}
+		{{ fig }}
+	{% endautoescape %}
+  </div>
+</div>
+{% endblock renderfig %} -->
+
+{% block form %}
+    <div id="contact">
+        <div class="line5">                 
+            <div class="container">
+                <div class="row Ama">
+                    <div class="col-md-12">
+                    
+                    <h3><i class="fa fa-quote-left fa-1g fa-pull-left fa-border" aria-hidden="true"></i>Got a Question? We&rsquo;re Here to Help!</h3>
+                    
+                    <h3><p> Get in touch with us. </p> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12 forma">
+                <!--Send the form  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                    <form action="#" method="post" enctype="text/plain">
+                        <div class="input-group margin-bottom-sm">   
+                            <span class="input-group-addon"><i class="fa fa-user fa-fw fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="col-md-12 col-xs-12 name" name='name' placeholder='Name *'/>                            
+                        
+                            <span class="input-group-addon"><i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="col-md-12 col-xs-12 Email" name='Email' placeholder='Email *'/>
+
+                        </div>
+
+
+
+                        <div class="input-group margin-bottom-sm">
+                            <span class="input-group-addon"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="col-md-12 col-xs-12 Tags" name='Tags' placeholder='Tags *'/>
+                        </div>
+
+                                           
+ 
+                        <div class="input-group margin-bottom-sm">
+<!--                         <div class="input-group margin-bottom-sm has-success has-feedback"> -->
+                            <span class="input-group-addon"><i class="fa fa-pencil fa-fw fa-lg" aria-hidden="ture"></i></span>
+                            <textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message *'></textarea>
+<!--                             <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="sr-only">(success)</span> -->
+                        </div>
+
+<!-- ******************************************************************************************* 
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label" for="inputSuccess2">Input with success</label>
+                            <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                        </div>
+******************************************************************************************* -->
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                        </div>
+  
+
+                        <div class="checkbox">
+                            <label>
+                            <input type="checkbox" > Check me out
+                            </label>
+                        </div>
+      
+                        
+                        <div class="row">
+                            <div class=" col-md-12 col-md-offset-4">
+                                <ul>
+                                    <button type = "submit" class="btn btn-primary active" value="Submit"> Submit 
+                                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                                    </button>
+                                    &nbsp;
+                                    <button type = "reset" class="btn btn-default active" value="Reset">  Reset
+                                    <span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
+                                    </button>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                
+                <div class="col-md-3 col-xs-12 cont">            
+                    <small>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-home fa-stack-1x"></i>
+                        </span>
+                        <small>1156 High St, Santa Cruz, CA 95064<br></small>
+                    </small>
+
+                    
+                    <small>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-phone fa-stack-1x"></i>
+                        </span>
+                        <small>########<br></small>
+                    </small>
+
+                    <small>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-skype fa-stack-1x"></i>
+                        </span>
+                        <small>########<br></small>
+                    </small>
+
+
+                    <small>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>
+                    <small>########</small>
+                    </small>
+
+                </div>
+
+
+
+
+
+
+                <div class="col-md-6 col-md-offset-9 addthis_toolbox addthis_default_style addthis_32x32_style">
+                    <a class="addthis_button_preferred_2"></a>
+                    <a class="addthis_button_preferred_3"></a>
+                    <a class="addthis_button_preferred_7"></a>
+                    <a class="addthis_button_compact"></a>
+                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+{% endblock form %}
+
+
+
+
